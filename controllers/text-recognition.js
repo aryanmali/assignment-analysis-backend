@@ -1,31 +1,31 @@
 const multer    = require('../middleware/multer-config'),
     fs          = require('fs'),
     { TesseractWorker } = require('tesseract.js'),
-    worker      = new TesseractWorker(),
+    worker      = new TesseractWorker();
 
     
     // vision      = require('@google-cloud/vision'); // Google cloud vision library.
     //client      = new vision.ImageAnnotatorClient(); // Creates a client
 
-const tesseract = multer.upload(req,res, err => {
-    fs.readFile(`./uploads/${req.file.originalname}`, (err, data) => {
-        if(err)
-            return console.log('This is your error', err);
+// const tesseract = multer.upload((req, res, err) => {
+//     fs.readFile(`./uploads/${req.file.originalname}`, (err, data) => {
+//         if(err)
+//             return console.log('This is your error', err);
         
-        worker
-        .recognize(data, "eng", {tessjs_create_pdf: "1"})
-        .progress(progress => {
-            console.log(progress);
-        })
-        .then(result => {
-            res.send(result.text);
-        })
-        .finally(() => worker.terminate());
-    });
-});
+//         worker
+//         .recognize(data, "eng", {tessjs_create_pdf: "1"})
+//         .progress(progress => {
+//             console.log(progress);
+//         })
+//         .then(result => {
+//             res.send(result.text);
+//         })
+//         .finally(() => worker.terminate());
+//     });
+// });
 
 
-module.exports = {tesseract};
+// module.exports = {tesseract};
 
 // async function quickstart(req, res, err) {
 //     if(err)

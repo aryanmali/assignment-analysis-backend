@@ -2,8 +2,8 @@
 const express   = require('express'),
     app         = express(),
     mongoose    = require('mongoose'),
-    routes      = require('./routes/router'),
-    variables   = require('./env-variables');
+    routes      = require('./routes/router');
+    // variables   = require('./env-variables');
 
 
 //Configurations:
@@ -12,7 +12,7 @@ app.set("view engine","ejs");
 //Routing
 app.use(routes);
 //Database
-mongoose.connect("mongodb+srv://TeamBakchodi:" +variables.mongoDBPassword +"@assignment-analyzer.nlazz.mongodb.net/<dbname>?retryWrites=true&w=majority", {useUnifiedTopology:true, useNewUrlParser:true});
+// mongoose.connect("mongodb+srv://TeamBakchodi:" +variables.mongoDBPassword +"@assignment-analyzer.nlazz.mongodb.net/<dbname>?retryWrites=true&w=majority", {useUnifiedTopology:true, useNewUrlParser:true});
 
 
 
