@@ -40,7 +40,7 @@ app.post('/bulk', upload.array('myfiles', 12) , (req, res) =>{
         var final_string = "";
         req.files.forEach(item => {
             
-        })
+        });
     } catch(error) {
           console.log(error);
            res.send(400);
