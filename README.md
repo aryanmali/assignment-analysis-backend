@@ -1,2 +1,2 @@
-## This bracnch contains google api.
-## Also contains text-similarity.
+## This repo contain backend files for Assignment Analysis
+### Please refer app.js (temporarily) for all routes 
