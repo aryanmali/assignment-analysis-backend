@@ -5,8 +5,9 @@
 // Call similarity function of the string similarity library.
 // Calculate the score.
 
-const similarity = require('sentence-similarity');
-const similarityScore = require('similarity-score');
+const similarity    = require('sentence-similarity'),
+    similarityScore = require('similarity-score'),
+    fs              = require('fs');
 
 // const someFunc = function(a,b,options) {
 //     let at = levenshtein(a,b);//for example
@@ -17,9 +18,12 @@ const similarityScore = require('similarity-score');
 const get_similarity = function (){
     
     console.log("string similirity was called");
-    const string1 = "Javascript/Nodejs sentence similarity. Although this was designed for sentences, it will work for other sequences as long as the user provides a scoring function for for comparing 2 elements of the sequence.";
-    const string2 = "Javascript/Nodejs sentence similarity. Although this was designed for sentences, it will work for other sequences as long as the user provides a scoring function for for comparing 2 elements of the sequence.";
+    // const string1 = "Javascript/Nodejs sentence similarity. Although this was designed for sentences, it will work for other sequences as long as the user provides a scoring function for for comparing 2 elements of the sequence.";
+    // const string2 = "Javascript/Nodejs sentence similarity. Although this was designed for sentences, it will work for other sequences as long as the user provides a scoring function for for comparing 2 elements of the sequence.";
     
+    const string1 = fs.readFileSync('../documents/testass1.txt', 'utf8');
+    const string2 = fs.readFileSync('../documents/testass2.txt', 'utf8');
+
     const s1 = string1.split(" ");
     const s2 = string2.split(" ");
 

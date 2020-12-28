@@ -1,0 +1,25 @@
+
+Methods/Techniques:
+
+1. Frame by Frame (Traditional Method):
+Earlier, in traditional method, animation was done by hands because of the absence of the computer-aided drawing facilities. And, these traditional method required a lot of effort for even making a short video because of the fact that every second of animation requires 24 frames to process.
+
+
+2. Procedural:
+In Procedural method, set of rules are used to animate the objects. Animator defines or specify the initial rules and procedure to process and later runs simulations.Many of the times rules or procedure are based on real world.s physical rule which are shown by mathematical equations.
+
+
+3. Behavioral:
+According to this method/technique, to a certain extent the character or object specifies/determines it’s own actions which helps / allows the character to improve later, and in turn, it frees the animator in determining each and every details of the character’s motion.
+
+
+4. Key Framing:
+A key frame in computer animation is a frame where we define changes in an animation. According to key framing, a storyboard requirement is must as the animator/artist draws the major frames (frames in which major/important changes can be made later) of animation from it. In key framing, character’s or object’s key position are the must and need to be defined by the animator, because the missing frames are filled in those key position via computer automatically.
+
+
+5. Motion Capture:
+This method of animation uses the live action/motion footage of a living human character which is recorded to the computer via video cameras and markers and later, that action or motion is used/applied to animate the character which gives the real feel to the viewers as if the real human character has been animated. Motion Capture is quite famous among the animators because of the fact that the human action or motion can be captured with relative ease.
+
+
+6. Dynamics:
+In this method, simulations are used in order to produce a quite different sequence while maintaining the physical reality. Physics’s laws are used in simulations to create the motion of pictures/characters. High level of interactivity can be achieved in this method, via the use of real-time simulations, where a real person performs the action or motions of a simulated character.
